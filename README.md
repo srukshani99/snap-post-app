@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SnapPost App
 
-## Getting Started
+SnapPost is a basic snap-posting app. Using this simple app, users can see all snaps posted by various users and add them to their favorite list. Also, users can view the post list that they made favorites, and if they want users can remove the posts from their favorite list.
 
-First, run the development server:
+###### **Version: 1.0.0**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
+**snap-post-app** - This is the main application and it is built in NextJS, Typescript, HTML, CSS(Saas)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Version Details
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Node - 20.16.0
+2. NPM - 10.8.1
+3. Next- 14.1.0
+4. Other NPM Modules - The latest versions have been used in the semantic versioning format.
+   
+## Project Setup
+You will need node and npm installed globally on your machine.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### my-todo-ui
+Clone down the repository and switch to the **snap-post-app** module. 
 
-## Learn More
+1. Install modules:
+`npm install`  
 
-To learn more about Next.js, take a look at the following resources:
+2. Start development server:
+`npm run dev`  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Visit the app:
+`http://localhost:3000` 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Screens
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+01- Users can see all the snaps posted by various users.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+02- Users can favorite snaps from the list.
+
+03- Users can see the favorite post list.
+
+04- Users can remove the snaps from their favorite list.
