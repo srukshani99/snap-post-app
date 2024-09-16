@@ -39,3 +39,10 @@ Clone down the repository and switch to the **snap-post-app** module.
 03- Users can see the favorite post list.
 
 04- Users can remove the snaps from their favorite list.
+
+![image](https://github.com/user-attachments/assets/37100b0c-90c4-413b-8d6c-b0c420530dfc)
+
+![image](https://github.com/user-attachments/assets/9dcbb54c-b93f-40ab-8316-c55e5c4c032b)
+
+![image](https://github.com/user-attachments/assets/c0299d60-4aa5-424a-a825-cd2bac7de714)
+
