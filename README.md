@@ -11,13 +11,13 @@ SnapPost is a basic snap-posting app. Using this simple app, users can see all s
 
 1. Node - 20.16.0
 2. NPM - 10.8.1
-3. Next- 14.1.0
+3. Next- 14.2.11
 4. Other NPM Modules - The latest versions have been used in the semantic versioning format.
    
 ## Project Setup
 You will need node and npm installed globally on your machine.
 
-#### my-todo-ui
+#### snap-post-app
 Clone down the repository and switch to the **snap-post-app** module. 
 
 1. Install modules:
