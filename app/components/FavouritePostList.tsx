@@ -32,11 +32,11 @@ const FavouritePostList = () => {
   }, []);
 
   return (
-    <>
+    <section className="fav-container">
       {favPostList && favPostList.length > 0 ? favPostList.map((post: PostModel, index: number) => {
-        return <section className="fav-container"><FavCard key={index} post={post} onRemoveFromFavorite={onRemoveFromFavorite} /></section>
-      }) : <p className='no-post'>No Favourte Posts Yet...</p>}
-    </>
+        return <FavCard key={index} post={post} onRemoveFromFavorite={onRemoveFromFavorite} />
+      }) : <p className='no-post'></p>}
+    </section>
 
   )
 }
