@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Purple Flower",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "post1.jpg",
+    "likesCount": 32,
+    "commentsCount": 12,
+    "hashTags": ["#SnapPost","#Inspiration", "#Happiness", "#Explore", "#CreativeMind", "#Vibes"],
+    "createdOn": "Mon, 16 September 2024",
+    "postedBy": {
+      "username": "sandunir",
+      "image": "user1.jpg"
+    },
+    "isFavourite": false
+  },
+  {
+    "id": 2,
+    "title": "Green Leaves",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "post2.jpg",
+    "likesCount": 65,
+    "commentsCount": 34,
+    "hashTags": ["#SnapPost","#Inspiration", "#Happiness", "#Explore", "#CreativeMind", "#Vibes"],
+    "createdOn": "Tue, 14 August 2024",
+    "postedBy": {
+      "username": "rukshaniww",
+      "image": "user2.jpg"
+    },
+    "isFavourite": false
+  },
+  {
+    "id": 3,
+    "title": "Cute Kitty",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "post3.jpg",
+    "likesCount": 27,
+    "commentsCount": 10,
+    "hashTags": ["#SnapPost","#Inspiration", "#Happiness", "#Explore", "#CreativeMind", "#Vibes"],
+    "createdOn": "Wed, 3 August 2024",
+    "postedBy": {
+      "username": "krash",
+      "image": "user3.jpg"
+    },
+    "isFavourite": false
+  },
+  {
+    "id": 4,
+    "title": "Aesthetic Wall Art",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "post4.jpg",
+    "likesCount": 23,
+    "commentsCount": 6,
+    "hashTags": ["#SnapPost","#Inspiration", "#Happiness", "#Explore", "#CreativeMind", "#Vibes"],
+    "createdOn": "Fri, 22 July 2024",
+    "postedBy": {
+      "username": "pnimshan",
+      "image": "user4.jpg"
+    },
+    "isFavourite": false
+  },
+{
+    "id": 5,
+    "title": "Temple",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "post5.jpg",
+    "likesCount": 15,
+    "commentsCount": 8,
+    "hashTags": ["#SnapPost","#Inspiration", "#Happiness", "#Explore", "#CreativeMind", "#Vibes"],
+    "createdOn": "Sat, 06 July 2024",
+    "postedBy": {
+      "username": "sash234",
+      "image": "user5.jpg"
+    },
+    "isFavourite": false
+  },
+{
+    "id": 6,
+    "title": "Elephant Photography",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "post6.jpg",
+    "likesCount": 28,
+    "commentsCount": 17,
+    "hashTags": ["#SnapPost","#Inspiration", "#Happiness", "#Explore", "#CreativeMind", "#Vibes"],
+    "createdOn": "Mon, 10 June 2021",
+    "postedBy": {
+      "username": "shaneww",
+      "image": "user6.jpg"
+    },
+    "isFavourite": false
+  },
+{
+    "id": 7,
+    "title": "Delicious moments made to share",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "post7.jpg",
+    "likesCount": 58,
+    "commentsCount": 26,
+    "hashTags": ["#SnapPost","#Inspiration", "#Happiness", "#Explore", "#CreativeMind", "#Vibes"],
+    "createdOn": "Thu, 31 March 2024",
+    "postedBy": {
+      "username": "pnimshan",
+      "image": "user4.jpg"
+    },
+    "isFavourite": false
+  },
+{
+    "id": 8,
+    "title": "White Leaves Wall Art",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "image": "post8.jpg",
+    "likesCount": 43,
+    "commentsCount": 31,
+    "hashTags": ["#SnapPost","#Inspiration", "#Happiness", "#Explore", "#CreativeMind", "#Vibes"],
+    "createdOn": "Wed, 26 January 2024",
+    "postedBy": {
+      "username": "sandunir",
+      "image": "user1.jpg"
+    },
+    "isFavourite": false
+  }
+]
