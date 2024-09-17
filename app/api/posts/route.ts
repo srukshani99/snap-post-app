@@ -1,5 +1,4 @@
-import { PostModel } from "@/models/post.model";
-import data from "@data/productList.json";
+import { getAllSnapPosts } from "@app/util/data.util";
 
 /**
  * API to get all posts available
@@ -7,8 +6,8 @@ import data from "@data/productList.json";
  */
 export const GET = async () => {
   try {
-    let allPosts: PostModel[] = data;
-    return new Response(JSON.stringify(allPosts), { status: 200 });
+    const data = getAllSnapPosts();
+    return new Response(JSON.stringify(data), { status: 200 });
   } catch (error) {
     return new Response("Failed to fetch all posts", { status: 500 });
   }

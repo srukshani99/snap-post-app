@@ -36,7 +36,7 @@ const PostList = () => {
     <section className="container">
       {postList && postList.length > 0 ? postList.map((post: PostModel) => {
         return <Post key={post.id} post={post} onAddToFavorite={onAddToFavorite} />
-      }) : <p>No Posts</p>}
+      }) : <p className='no-post'></p>}
     </section>
   )
 }

@@ -379,7 +379,7 @@ nav li:first-child{
     grid-template-columns: repeat(3, 1fr);
   }
   .fav-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -394,7 +394,7 @@ nav li:first-child{
     grid-template-columns: repeat(2, 1fr);
   }
   .fav-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .footer {
     font-size: 0.875rem;

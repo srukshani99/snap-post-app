@@ -1,21 +1,14 @@
-import { PostModel } from "@/models/post.model";
-import data from "@data/productList.json";
-
-let allPosts: PostModel[] = data;
-
+import { NextRequest } from "next/server";
+import { addToFavourite, getFavouriteSnapPosts } from "@app/util/data.util";
 /**
  * API to add posts to favourites
  * @param request
  * @returns
  */
-export const POST = async (request: any) => {
+export const POST = async (request: NextRequest) => {
   try {
     const { postId } = await request.json();
-    allPosts.map((post: PostModel) => {
-      if (post.id === postId) {
-        post.isFavourite = true;
-      }
-    });
+    addToFavourite(postId);
     return new Response("Post added to favourites", { status: 200 });
   } catch (error) {
     return new Response("Failed to add to favourite posts", { status: 500 });
@@ -28,8 +21,8 @@ export const POST = async (request: any) => {
  */
 export const GET = async () => {
   try {
-    let favPosts = allPosts.filter((post: PostModel) => post.isFavourite === true);
-    return new Response(JSON.stringify(favPosts), { status: 200 });
+    const data = getFavouriteSnapPosts();
+    return new Response(JSON.stringify(data), { status: 200 });
   } catch (error) {
     return new Response("Failed to fetch favourite posts", { status: 500 });
   }

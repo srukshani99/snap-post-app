@@ -1,16 +1,9 @@
-import data from "@data/productList.json";
-import { PostModel } from "@models/post.model";
 import { NextRequest } from "next/server";
-
-let allPosts: PostModel[] = data;
+import { removeFromFavourite } from "@app/util/data.util";
 
 export const DELETE = async (request: NextRequest, { params }: { params: { id: number } }) => {
   try {
-    allPosts.map((post: PostModel) => {
-      if (post.id === params.id) {
-        post.isFavourite = false;
-      }
-    });
+    removeFromFavourite(params.id);
     return new Response("Successfully removed from favourite posts", {
       status: 200,
     });
