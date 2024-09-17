@@ -5,7 +5,7 @@ SnapPost is a basic snap-posting app. Using this simple app, users can see all s
 ###### **Version: 1.0.0**
 
 ## Technologies Used
-**snap-post-app** - This is the main application and it is built in NextJS, Typescript, HTML, CSS(Saas)
+**snap-post-app** - This is the main application and it contains both client and server side modules it is built in NextJS, Typescript, HTML, CSS(Saas)
 
 ## Version Details
 
@@ -18,7 +18,7 @@ SnapPost is a basic snap-posting app. Using this simple app, users can see all s
 You will need node and npm installed globally on your machine.
 
 #### snap-post-app
-Clone down the repository and switch to the **snap-post-app** module. 
+Clone down the repository and switch to the **snap-post-app-main** module. 
 
 1. Install modules:
 `npm install`  
