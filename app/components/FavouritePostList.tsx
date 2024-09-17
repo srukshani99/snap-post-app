@@ -15,11 +15,8 @@ const FavouritePostList = () => {
 
   const onRemoveFromFavorite = async (postId: number) => {
     try {
-      const response = await fetch(`/api/posts/favourites/${postId}`, {
-        method: "DELETE",
-        body: JSON.stringify({
-          postId: postId
-        }),
+      await fetch(`/api/posts/favourites/${postId}`, {
+        method: "DELETE"
       });
       fetchFavPosts();
     } catch (error) {
@@ -33,8 +30,8 @@ const FavouritePostList = () => {
 
   return (
     <section className="fav-container">
-      {favPostList && favPostList.length > 0 ? favPostList.map((post: PostModel, index: number) => {
-        return <FavCard key={index} post={post} onRemoveFromFavorite={onRemoveFromFavorite} />
+      {favPostList && favPostList.length > 0 ? favPostList.map((post: PostModel) => {
+        return <FavCard key={post.id} post={post} onRemoveFromFavorite={onRemoveFromFavorite} />
       }) : <p className='no-post'></p>}
     </section>
 

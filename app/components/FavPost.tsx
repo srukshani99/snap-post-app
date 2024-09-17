@@ -3,6 +3,7 @@
 import { PostModel } from '@models/post.model';
 import React from 'react'
 import RemoveFavourite from './RemoveFavourite';
+import Image from 'next/image';
 
 type Props = {
   post: PostModel,
@@ -12,7 +13,7 @@ type Props = {
 const FavCard = ({ post, onRemoveFromFavorite }: Props) => {
   return (
     <div className="card">
-      <img src={`assets/images/${post.image}`} alt={post.image} />
+      <Image src={`/assets/images/${post.image}`} alt={post.image} width={500} height={500} />
       <div className="card-fav-title">
         <h2 >{post.title} </h2>
         <RemoveFavourite post={post} onRemoveFromFavorite={onRemoveFromFavorite} />

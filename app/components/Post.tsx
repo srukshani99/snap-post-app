@@ -2,6 +2,7 @@ import React from 'react';
 import { HiHeart } from "react-icons/hi";
 import AddFavourite from './AddFavourite';
 import { PostModel } from '@models/post.model';
+import Image from 'next/image';
 
 type Props = {
   post: PostModel,
@@ -14,10 +15,12 @@ const Post = ({ post, onAddToFavorite }: Props) => {
     <div className="card">
       <div className="card-header">
         <div className='card-header-details'>
-          <img
+          <Image
             src={`/assets/images/${post.postedBy.image}`}
             alt="Profile"
             className="profile-img"
+            width={500}
+            height={500}
           />
           <div className="user-info">
             <h3>{post.postedBy.username}</h3>
@@ -27,7 +30,7 @@ const Post = ({ post, onAddToFavorite }: Props) => {
         <AddFavourite post={post} onAddToFavorite={onAddToFavorite} />
       </div>
 
-      <img src={`assets/images/${post.image}`} alt={post.image} />
+      <Image src={`/assets/images/${post.image}`} alt={post.image} width={500} height={500} />
 
       <h2 className="card-title">{post.title}</h2>
       <div className="card-actions">
@@ -39,7 +42,7 @@ const Post = ({ post, onAddToFavorite }: Props) => {
         <p className="description">{post.description}</p>
         <div>
           {post.hashTags && post.hashTags.length > 0 && post.hashTags.map((tag: string, index: number) => {
-            return <span className="hashtag">{tag}</span>
+            return <span key={index} className="hashtag">{tag}</span>
           })}
         </div>
         <p className="card-text">

@@ -15,7 +15,7 @@ const PostList = () => {
 
   const onAddToFavorite = async (postId: number) => {
     try {
-      const response = await fetch(`/api/posts/favourites`, {
+      await fetch(`/api/posts/favourites`, {
         method: "POST",
         body: JSON.stringify({
           postId: postId
@@ -34,8 +34,8 @@ const PostList = () => {
 
   return (
     <section className="container">
-      {postList && postList.length > 0 ? postList.map((post: PostModel, index: number) => {
-        return <Post key={index} post={post} onAddToFavorite={onAddToFavorite} />
+      {postList && postList.length > 0 ? postList.map((post: PostModel) => {
+        return <Post key={post.id} post={post} onAddToFavorite={onAddToFavorite} />
       }) : <p>No Posts</p>}
     </section>
   )

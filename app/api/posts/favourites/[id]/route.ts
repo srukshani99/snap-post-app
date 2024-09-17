@@ -1,13 +1,13 @@
 import data from "@data/productList.json";
 import { PostModel } from "@models/post.model";
+import { NextRequest } from "next/server";
 
 let allPosts: PostModel[] = data;
 
-export const DELETE = async (request: any, { param }: any) => {
+export const DELETE = async (request: NextRequest, { params }: { params: { id: number } }) => {
   try {
-    const { postId } = await request.json();
     allPosts.map((post: PostModel) => {
-      if (post.id === postId) {
+      if (post.id === params.id) {
         post.isFavourite = false;
       }
     });
